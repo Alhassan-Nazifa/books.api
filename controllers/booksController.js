@@ -16,12 +16,12 @@ const getBooks = (req, res)=>{
     }else{
         res.status(404).json({error:"Book not found"})
     }
-    }*/
-
+    
+}*/
 
 //delete a book
 const deleteBook=(req, res)=>{
-    res.json(books.filter((book)=>books.name!==req.params.name))
+    res.json(books.filter((book)=>books.name!=req.params.name))
 
 }
 
